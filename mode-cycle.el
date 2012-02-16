@@ -24,7 +24,7 @@
 ;;; and add
 ;;; (require 'mode-cycle)
 ;;; to your .emacs
-;;; You may also want to redefine keybindings at the end (i define them to <- and -> in my Microsoft 4000 keyboard)
+;;; You may also want to redefine keybindings at the end (i define them to <XF86Back> and <XF86Forward>)
 
 (defun get-buffer-mode (buffer-or-string)
   (save-excursion
