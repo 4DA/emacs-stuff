@@ -40,7 +40,7 @@
 (skip-syntax-backward "-_>")
 
 (when (= 0 (skip-syntax-backward "w\""))
-    (skip-syntax-backward "_.'()(])[$"))
+    (skip-syntax-backward "_.'()(])[$<>"))
 
 (kill-region (point) (mark))
 (pop-mark))
@@ -54,7 +54,7 @@
 (skip-syntax-forward "-_>")
 
 (when (= 0 (skip-syntax-forward "w\""))
-    (skip-syntax-forward "_.'()(])[$"))
+    (skip-syntax-forward "_.'()(])[$<>"))
 
 (kill-region (point) (mark))
 (pop-mark))
