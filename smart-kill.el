@@ -20,9 +20,9 @@
 
 ;;; Commentary:
 ;;; int array []
-;;;            ^
-;;;            |
-;;;            + - Pressing M-h here kills ``array'' as well
+;;;             ^
+;;;             |
+;;;             + - Pressing M-h here kills ``array'' as well
 ;;;
 ;;; If you dislike such behaviour theese two functions make help you
 ;;;
