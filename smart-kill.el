@@ -59,5 +59,5 @@
 (kill-region (point) (mark))
 (pop-mark))
 
-(provides 'smart-kill)
+(provide 'smart-kill)
 
