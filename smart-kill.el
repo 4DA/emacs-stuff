@@ -1,5 +1,5 @@
 ;;; mode-cycle.el --- Buffer mode cycling for Emacs
-;;; version 0.1
+;;; version 0.2
 
 ;; Copyright (C) 2013 Dmitry Cherkassov
 
