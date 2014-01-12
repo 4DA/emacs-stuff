@@ -50,4 +50,4 @@
     (do-reply-to-post-comment))
   (end-of-buffer))
 
-(global-set-key (kbd "H-R"))
+(provide 'comment-el)
