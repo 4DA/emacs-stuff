@@ -44,7 +44,9 @@
       (message "No comments found"))))
 
 (defun reply-to-post-comment()
-  "Searches above the point for comment(post) #foo123/bar1 and places it in the beginning of editable region. Repetitive further invocations cause the inserted comment to change accordingly."
+  "Searches above the point for comment(post) #foo123/bar1 and
+places it in the beginning of editable region. Further
+invocations cause the insertion of farther comments."
   (interactive)
   (save-excursion
     (do-reply-to-post-comment))
