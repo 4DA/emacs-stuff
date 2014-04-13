@@ -16,11 +16,12 @@
 
 (defun koko-word (start end)
   (goto-char start)
-  (let* ((cand (buffer-substring start end))
-         (res (find-nearest cand)))
-    (when res
-      (kill-region start end)
-      (insert res))))
+  (when (> (- end start) 3) ;; don't touch words widh 3 or less letters
+    (let* ((cand (buffer-substring start end))
+           (res (find-nearest cand)))
+      (when res
+        (kill-region start end)
+        (insert res)))))
 
 (defun kokoify (start end)
   (interactive "r")
