@@ -4,8 +4,6 @@
 
 (defvar *max-diff* 10)
 
-(defvar co-list (mapcar 'contract ko-list))
-(defvar co-ko-list (mapcar* 'cons co-list ko-list))
 
 (defvar *cons-string* "бвгджзйклмнпрстфхцчшщ")
 (defvar *vowel-string* "аеёиоуыэюя")
@@ -17,6 +15,8 @@
          (devow (replace-regexp-in-string devow-rx "" word)))
     (replace-regexp-in-string squeeze-rx "\\1" devow)))
 
+(defvar co-list (mapcar 'contract ko-list))
+(defvar co-ko-list (mapcar* 'cons co-list ko-list))
 
 (defun find-nearest (word)
   (setq res nil)
